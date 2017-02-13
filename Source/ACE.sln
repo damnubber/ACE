@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26127.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACE", "ACE\ACE.csproj", "{1CE9FC39-B920-4120-939D-1C0AA6FF017C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACEmuLauncher", "..\Launcher\ACEmuLauncher\ACEmuLauncher.csproj", "{132D0366-751B-4E3F-89FD-C0B5D2B8A2A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1CE9FC39-B920-4120-939D-1C0AA6FF017C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE9FC39-B920-4120-939D-1C0AA6FF017C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE9FC39-B920-4120-939D-1C0AA6FF017C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132D0366-751B-4E3F-89FD-C0B5D2B8A2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132D0366-751B-4E3F-89FD-C0B5D2B8A2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132D0366-751B-4E3F-89FD-C0B5D2B8A2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132D0366-751B-4E3F-89FD-C0B5D2B8A2A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

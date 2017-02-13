@@ -1,0 +1,39 @@
+﻿<Window x:Name="ACEmulator_Launcher" x:Class="ACEmuLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ACEmuLauncher"
+        mc:Ignorable="d"
+        Title="ACEmu Launcher" Height="695" Width="1042">
+    <Grid x:Name="MainWindow1" Margin="3,-1,-32,1" GotFocus="MainWindow1_GotFocus">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF8F7F0" Offset="0"/>
+                <GradientStop Color="#FF0A84A8" Offset="0.92"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="214*"/>
+            <ColumnDefinition Width="649*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="verLbl" Content="v0.0.0.1" Margin="715,633,44,0" VerticalAlignment="Top" Height="16" FontSize="6" Grid.Column="1"/>
+        <WebBrowser x:Name="webAC" Margin="10,56,267,77" Source="http://acemulator.org/" Grid.ColumnSpan="2"/>
+        <Button x:Name="launchBtn" Content="Launch" Grid.Column="1" Margin="676,385,41,0" VerticalAlignment="Top" Background="#FF0EBDF1" Click="launchBtn_Click" TabIndex="5"/>
+        <TextBox x:Name="usernameTxtBox" Grid.Column="1" Height="23" Margin="614,301,41,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="3"/>
+        <TextBox x:Name="passwordTxtBox" Grid.Column="1" Height="23" Margin="614,341,41,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="4"/>
+        <Label x:Name="usernameLbl" Content="User Name" Grid.Column="1" Margin="545,301,166,0" VerticalAlignment="Top"/>
+        <Label x:Name="passwordLbl" Content="Password" Grid.Column="1" Margin="545,338,166,0" VerticalAlignment="Top"/>
+        <Label x:Name="serverLbl" Content="Server" Grid.Column="1" Margin="545,218,176,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="serverTxtBox" Grid.Column="1" Height="23" Margin="614,221,41,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="1" Text="75.63.120.231"/>
+        <Label x:Name="portLbl" Content="Port" Grid.Column="1" Margin="545,257,176,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="portTxtBox" Grid.Column="1" Height="23" Margin="614,260,133,0" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="2" Text="9050"/>
+        <Button x:Name="returnBtn" Content="Home" Grid.Column="1" HorizontalAlignment="Left" Margin="436,618,0,0" VerticalAlignment="Top" Width="75" Click="returnBtn_Click"/>
+        <Button x:Name="profileBtn" Content="Profiles" Grid.Column="1" HorizontalAlignment="Left" Margin="584,126,0,0" VerticalAlignment="Top" Width="75" Click="profileBtn_Click" Background="#FF0EBDF1"/>
+        <Label x:Name="label" Content="Profile" Grid.Column="1" HorizontalAlignment="Left" Margin="545,56,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="profileComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="614,60,0,0" VerticalAlignment="Top" Width="114" SelectionChanged="profileComboBox_SelectionChanged"/>
+        <ComboBox x:Name="profileComboBox_Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="614,60,0,0" VerticalAlignment="Top" Width="114" SelectionChanged="profileComboBox_SelectionChanged" Visibility="Hidden"/>
+        <Button x:Name="refreshBtn" Content="Refresh" Grid.Column="1" HorizontalAlignment="Left" Margin="676,126,0,0" VerticalAlignment="Top" Width="75" Click="refreshBtn_Click" Background="#FF0EBDF1"/>
+
+    </Grid>
+</Window>
