@@ -7,6 +7,7 @@ namespace ACE.Common
 {
     public struct ConfigServerNetwork
     {
+        public string IpBinding { get; set; }
         public uint Port { get; set; }
     }
 
